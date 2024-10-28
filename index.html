@@ -9,21 +9,29 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 20px;
-            overflow: hidden; /* Prevent scroll bars in the body */
+            overflow: hidden;
+        }
+        .iframe-container {
+            width: 1000px; /* Container width */
+            height: 560px; /* Container height */
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         iframe {
-            width: 1000px; /* Set to a specific width */
-            height: 560px; /* Adjust height based on your content */
+            width: 1250px; /* Increase width */
+            height: 700px; /* Increase height */
             border: none;
-            display: block; /* Remove default inline spacing */
+            display: block;
+            transform: scale(0.8); /* Scale down content */
+            transform-origin: top left; /* Keeps top-left alignment */
         }
     </style>
 </head>
 <body>
-
-    <!-- <h1>Embedded Excel Dashboard</h1> --> <!-- Title removed -->
-
-    <iframe src="https://moedledumy-my.sharepoint.com/:x:/g/personal/m-865803_moe-dl_edu_my/EZhYHN2OWFxAk6ECJayGYicBQDK81DYiFVQGiqhQih8R-A?e=aVRL3X&action=embedview&wdbipreview=true&wdAllowInterativity=True&wdHideSheetTabs=True&wdHideHeaders=True"></iframe>
-
+    <div class="iframe-container">
+        <iframe src="https://moedledumy-my.sharepoint.com/:x:/g/personal/m-865803_moe-dl_edu_my/EZhYHN2OWFxAk6ECJayGYicBQDK81DYiFVQGiqhQih8R-A?e=aVRL3X&action=embedview&wdbipreview=true&wdAllowInterativity=True&wdHideSheetTabs=True&wdHideHeaders=True"></iframe>
+    </div>
 </body>
 </html>
